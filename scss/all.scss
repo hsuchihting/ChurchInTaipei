@@ -1,0 +1,57 @@
+@import '_reset';
+
+$primary: #3d82ad;
+$white: #fff;
+$text: #333;
+$blue: #5fbfff;
+$green: #00aa00;
+$yellow: #f3da9a;
+$orange: #ff8800;
+$pink: #faaad1;
+$red: #fa5858;
+$darkRed: #a11313;
+
+//layout
+body {
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "微軟正黑體";
+}
+
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+.title {
+	text-align: center;
+	color: $red;
+	font-size: 32px;
+	margin: 20px auto;
+	font-weight: bold;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	.church {
+		width: 27%;
+		margin: 1%;
+		padding: 2%;
+		line-height: 1.5;
+		background-color: $yellow;
+		border-radius: 6px;
+		box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+		&:hover {
+			background-color: lighten($yellow, 10%);
+			transition: all 0.5s ease-in-out;
+			transform: translateY(-5%);
+		}
+		h2 {
+			color: $primary;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p {
+			color: $text;
+		}
+	}
+}
